@@ -5,7 +5,7 @@ const styles={
 }
 const Border = (props) => (
     <div style={styles}>
-    lorem ipsum dolor sie amet
+    {props.children}
     </div>
 )
 

@@ -1,11 +1,20 @@
 import React from 'react'
-import DisplayName from './DisplayName'
-import DisplayArray from './DisplayArray'
+
+import SingingButton from './SinginButton.js'
 import Border from './Border.js'
 
 const App = () => (
   <div>
-   <Border/>
+   <Border>
+   <SingingButton
+   label={'Przycisk1'}
+   sound={'lalalalalalal'}
+   />
+   <SingingButton
+   label={'Przycisk2'}
+   sound={'psy dwa'}
+   />
+   </Border>
   </div>
 )
 
