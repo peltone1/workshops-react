@@ -1,13 +1,17 @@
 import React from 'react'
 
-const SingingButton = (props) => (
-    <div>
-        <button
-            onClick = {() => alert(props.sound)} 
-        >
-            {props.label}
-        </button>
-    </div>
-)
+
+const SingingButton = (props) => {
+    const defaultMakeSound = () => alert(props.sound)
+    return (
+        <div>
+            <button
+                onClick={props.makeSound || defaultMakeSound}
+            >
+                {props.label}
+            </button>
+        </div>
+    )
+}
 
 export default SingingButton
