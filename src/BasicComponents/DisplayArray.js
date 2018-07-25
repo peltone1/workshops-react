@@ -5,7 +5,7 @@ const DisplayArray = (props) => (
     <div>
         <ul>
             {
-                props.arrName.map((string, index) => <li key={index}>{string}</li>)
+                props.listOfNames.map((string, index) => <li key={index}>{string}</li>)
             }
         </ul>
     </div>
