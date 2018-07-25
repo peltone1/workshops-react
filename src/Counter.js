@@ -12,8 +12,7 @@ class Counter extends React.Component {
     }
 
     decHandler = () => {
-        this.setState
-            ({
+        this.setState({
                 number: this.state.number - 1
             })
     }

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Border from './Border'
 import SingingButton from './SinginButton'
 import Paper from 'material-ui/Paper'
 
