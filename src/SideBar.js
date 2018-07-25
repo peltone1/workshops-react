@@ -3,9 +3,27 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import { Link } from 'react-router-dom'
 
-const SideBar = (props) => (
+class SideBar extends React.Component {
+    state = {
+        isOpen: true
+    }
 
-        <Drawer open={true} >
+    toogleHandler = () => {
+        this.setState (
+            {  
+                isOpen: !this.state.isOpen
+
+            }
+        )
+    }
+
+    render () {
+    return (
+
+        <Drawer open={this.state.isOpen} >
+        <MenuItem
+        onClick= {this.toogleHandler}
+        >Close</MenuItem>
             <Link
                 to={'/dashboard'}
                 style={{ textDecoration: 'none' }}>
@@ -20,7 +38,8 @@ const SideBar = (props) => (
                 <MenuItem> Parameters dup</MenuItem> </Link>
         </Drawer>
 
-)
-
+        )
+    }
+}
 
 export default SideBar
