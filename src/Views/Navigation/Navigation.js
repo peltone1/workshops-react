@@ -11,7 +11,6 @@ class Navigation extends React.Component {
         this.setState (
             {  
                 isOpen: !this.state.isOpen
-
             }
         )
     }

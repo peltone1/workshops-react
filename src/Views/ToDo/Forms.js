@@ -1,5 +1,5 @@
 import React from 'react'
-import PaperRefined from '../Components/PaperRefined'
+import PaperRefined from '../../Components/PaperRefined'
 import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField';
 

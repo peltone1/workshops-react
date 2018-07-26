@@ -1,15 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import BasicComponents from './Views/BasicComponents'
+import Dashboard from './Views/Dashboard.js'
+import PassingParameters from './Views/PassingParameters.js'
 
-
-import BasicComponents from './BasicComponents'
-import Dashboard from './Dashboard.js'
-import PassingParameters from './PassingParameters.js'
-
-import Counter from './Counter.js'
-import ToDo from './ToDo'
-import Navigation from './Navigation'
+import Counter from './Views/Counter.js'
+import ToDo from './Views/ToDo'
+import Navigation from './Views/Navigation'
+import FetchingRandomUsers from './Views/FetchingRandomUsers/FetchingRandomUsers';
 
 
 
@@ -25,11 +24,11 @@ const App = () => (
         <Route path={'/passing-parameters/:parameterName'} component={PassingParameters} />
         <Route path={'/counter'} component={() => <Counter number={5}/>} />
         <Route path={'/todo'} component={ToDo} />
-
+        <Route path={'/fetchingrandom'} component={FetchingRandomUsers} />
 
   </div>
   </Router>
 )
-
+ 
 
 export default App

@@ -32,6 +32,11 @@ class SideBar extends React.Component {
                     label={'Counter'}
                     toogleSideBar={this.props.toogleSideBar}
                 />
+                 <SideBarItem
+                    to={'/fetchingrandom'}
+                    label={'Users'}
+                    toogleSideBar={this.props.toogleSideBar}
+                />
                 
             </Drawer>
 
